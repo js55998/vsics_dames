@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="Debasish" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Sahoo" />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        value="Debasish"
+        readonly
+      /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Sahoo" readonly />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        value="Debasish"
+        disabled
+      /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Sahoo" disabled />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" size="20" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" size="40" />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" size="50" /><br />
+      <label for="pin">PIN:</label><br />
+      <input type="text" id="pin" name="pin" maxlength="4" size="4" />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="files">Select files:</label>
+      <input type="file" id="files" name="files" multiple />
+    </form>
+
+    <br /><br />
+    <form action="#">
+      <label for="country_code">Country code:</label>
+      <input
+        type="text"
+        id="country_code"
+        name="country_code"
+        pattern="[A-Za-z]{3}"
+        title="Three letter country code"
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="phone">Enter a phone number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+      />
+    </form>
+
+    <br /><br />
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <input type="submit" value="Submit" />
+    </form>
+
+
+
+    <br /><br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" autofocus /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" />
+    </form>
+
+
+    <br/><br/>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="image" src="./img_submit.gif" alt="Submit" width="48" height="48">
+      </form>
+
+
+      <br/><br/>
+      <label>Select Browsers</label>
+      <form>
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+
+      <br/><br/>
+      <form action="#" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+
+  </body>
+</html>
