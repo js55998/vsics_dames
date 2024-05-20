@@ -1,0 +1,10 @@
+h1 {
+	text-align: center;
+}
+
+video {    
+  height: 90%;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: square;
+        display: flex;
+      }
+
+      li {
+        display: block;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JAVASCRIPT</a></li>
+    </ul>
+    <hr />
+    <ul>
+      <!-- start of  main list-->
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>
+        JavaScript
+        <ul>
+          <!-- start of nested list-->
+          <li>Angular</li>
+          <li>React</li>
+          <li>Vue</li>
+        </ul>
+        <!--end of nested list-->
+      </li>
+    </ul>
+    <!--end of  main list -->
+  </body>
+</html>
