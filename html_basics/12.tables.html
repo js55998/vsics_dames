@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- A border is set using the CSS border property -->
+    <style>
+    /*Cell padding specifies the space between the cell contents and its borders.*/
+        table#t1, th{
+            width: 50%;
+            color: green;
+            background-color: yellow;
+            border: 1px solid blue;
+            border-collapse: collapse;
+            padding: 15px;           /*space between the cell content and its borders*/
+            text-align: center;
+            border-spacing: 10px;    /*space between the cells*/
+            /*If the table has collapsed borders, border-spacing has no effect.*/
+        }
+
+        td{
+            color: purple;
+            border: 1px solid orange;
+            border-collapse: collapse;
+            background-color: gray;
+        }
+
+        table#t2{
+            width: 40%;
+            border-spacing: 10px;    /*space between the cells*/
+            background-color: gray;
+            border-spacing: 20px;    /*space between the cells*/
+            /*works here because table2 doesn't have border collapsed*/
+       }
+
+       thead {color:gray;}
+       tbody {color:blue;}
+       tfoot {color:red;}
+
+       table#t3{
+           border: 5px solid green;
+       }
+    </style>
+</head>
+
+<body>
+<!-- An HTML table is defined with the <table> tag. -->
+<table id="t1">  <!-- width of the table is 50% of page width -->
+  <tr>                     <!-- Each table row is defined with the <tr> tag -->
+    <th>Firstname</th>     <!-- A table header is defined with the <th> tag -->
+    <th>Lastname</th>      <!-- By default, table headings are bold and centered. -->
+    <th>Age</th>
+  </tr>
+
+  <tr>
+    <td>Jill</td>          <!-- A table data/cell is defined with the <td> tag -->
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<hr />
+
+<h2>Cell that spans two columns:</h2>
+<table id="t2">
+    <caption>My Caption (Heading)</caption>
+    <!-- Note: The <caption> tag must be inserted immediately after the <table> tag. -->
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<br />
+
+<table id="t3">
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+
+  <!-- Though I am writing tfoot before tbody it will be executed at the end -->
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

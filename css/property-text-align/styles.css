@@ -1,0 +1,9 @@
+h1 {
+	text-align: center;
+}
+
+p {    
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  text-align: justify;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Internal CSS -->
+    <!-- An internal CSS is used to define a style for a single HTML page.
+    An internal CSS is defined in the <head> section of an HTML page, within a <style> element: -->
+    <style>
+        body {background-color: powderblue;}
+        h1 {color: blue;}
+        p {
+            color: blue;
+            font-family: courier;
+           }
+    </style>
+</head>
+
+<!-- External CSS-->
+<head>
+  <link rel="stylesheet" href="my_style.css">
+</head>
+
+<body>
+
+<!-- Inline CSS -->
+<!-- An inline CSS is used to apply a unique style to a single HTML element.
+An inline CSS uses the style attribute of an HTML element.
+This example sets the text color of the <h1> element to blue: -->
+<h1 style="color:green;">This is a green Heading using inline CSS</h1>
+
+<!-- Using Internal CSS Style -->
+<h1>This is a heading using internal css but doesnot taking style of internal because external css is lastly executed</h1>
+<p>This is a paragraph using internal but doesnot taking style of internal because external css is lastly executed</p>
+
+<!-- Using External CSS Style -->
+<!-- An external style sheet is used to define the style for many HTML pages.
+With an external style sheet, you can change the look of an entire web site, by changing one file! -->
+<h1>This is a heading using external CSS</h1>
+<p>This is a paragraph using external CSS with courier font</p>
+
+<!-- Note: External CSS Style sheet is going to overwrite the Internal because external style is executed last -->
+
+<!-- To define a specific style for one special element, add an id attribute to the element -->
+<h2 id="my_id">I am different</h2>
+
+<!-- To define a style for a special type of elements, add a class attribute to the element -->
+<p class="my_class">I am using class attributes so i am pink</p>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+.table1, .table1 th, .table1 td {
+  border:1px solid #282A35;
+}
+body.darkpagetheme .table1,body.darkpagetheme .table1 th,body.darkpagetheme .table1 td {
+  border:1px solid #ddd;
+}
+
+.table2, .table2 th, .table2 td {
+  border:1px solid #282A35;
+  border-collapse: collapse;
+}
+body.darkpagetheme .table2,body.darkpagetheme .table2 th,body.darkpagetheme .table2 td {
+  border:1px solid #ddd;
+}
+
+.table2 td {
+  height:29px;
+}
+.table3, .table3 th, .table3 td {
+  border:2px solid #fff;
+  border-collapse: collapse;
+}
+
+.table3 td {
+  background-color:#96D4D4;
+  border-radius:10px;
+  height:29px;
+}
+.table4, .table4 th, .table4 td {
+  border:2px solid #fff;
+  border-collapse: collapse;
+}
+body.darkpagetheme .table4,body.darkpagetheme .table4 th,body.darkpagetheme .table4 td {
+  border-color:#282A35;
+}
+.table4 td {
+  background-color:#96D4D4;
+}
+.table5, .table5 th, .table5 td {
+  border:1px solid black;
+  border-radius: 10px;
+}
+body.darkpagetheme .table5,body.darkpagetheme .table5 th,body.darkpagetheme .table5 td {
+  border-color:#ddd;
+}
+.table6 th, .table6 td {
+  border:1px solid black;
+  border-radius: 10px;
+}
+body.darkpagetheme .table6,body.darkpagetheme .table6 th,body.darkpagetheme .table6 td {
+  border-color:#ddd;
+}
+.table7, .table7 th, .table7 td {
+  border-collapse: collapse;
+}
+.table7 th, .table7 td {
+  border:2px solid black;
+  border-style: dotted;
+}
+body.darkpagetheme .table7,body.darkpagetheme .table7 th,body.darkpagetheme .table7 td {
+  border-color:#ddd;
+}
+.table8, .table8 th, .table8 td {
+  border-collapse: collapse;
+}
+
+.table8 th, .table8 td {
+  border:2px solid #96D4D4;
+}

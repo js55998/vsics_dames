@@ -1,0 +1,10 @@
+h1 { 
+  border: 2px solid black;
+  color: pink;
+}
+
+body {    
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+}
