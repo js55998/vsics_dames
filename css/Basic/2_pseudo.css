@@ -1,0 +1,7 @@
+h3 {
+    color: white;
+}
+
+h3:first-child {
+    background-color: red;
+}
