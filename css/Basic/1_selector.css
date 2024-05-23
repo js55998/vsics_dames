@@ -1,43 +1,34 @@
-p{
-    color:yellow;
-    background-color: blue;
-}
-/*Class Selector*/
-.cls{
-    color:rgb(30, 255, 0);
-    background-color: rgb(255, 225, 0);
-}
-/*Id Selector*/
-#ide{
-    color:rgb(216, 171, 222);
-    background-color: rgb(255, 123, 0);
+/* tag selector */
+p {
+    color: white;
+    background-color: red;
 }
 
+/* class selector */
+.student {
+    color: black;
+    background-color: yellow;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* id selector */
+#Christen {
+    color: white;
+    background-color: green;
+}
 
 /* attribute selector */
 a[href="abc.com"] {
     color: blue;
-    background-color: rgb(109, 109, 27);
+    background-color: yellow;
 }
+
 a[href="xyz.id"] {
     color: green;
-    background-color:gray;-
+    background-color:gray;
 }
-/* grouping selector */
-b,i,u{
+
+/* grouping */
+b, i, ins {
     color: lightpink;
     background-color: magenta;
 }
@@ -47,6 +38,7 @@ header h3, header p {
     color: maroon;
     background-color: yellowgreen;
 }
+
 /* child selector */
 article > p {
     color: red;
@@ -54,12 +46,12 @@ article > p {
 }
 
 article > main > p {
-    color: rgb(0, 238, 255);
-    background-color: rgb(250, 150, 135);
+    color: yellow;
+    background-color: brown;
 }
 
 /* adjacent selector */
-h6+small{
+h6 + small + small {
     color: gold;
     background-color: indigo;
 }
