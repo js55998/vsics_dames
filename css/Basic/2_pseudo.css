@@ -1,7 +1,52 @@
 h3 {
-    color: white;
+  color: white;
 }
-
-h3:first-child {
+/* h3:first-child {
     background-color: red;
+  }
+  h3:last-child {
+    background-color: green;
+  }
+
+  h3:nth-child(2),
+  h3:nth-child(3), 
+  h3:nth-child(4){
+    background-color: hotpink;
+  } */
+/* h3:nth-child(odd) {
+  background-color: lightblue;
 }
+h3:nth-child(even) {
+  background-color: lightpink;
+} */
+
+/* h3:nth-of-type(odd) {
+    background-color: green;
+  }
+  h3:nth-of-type(even) {
+    background-color: red;
+  } */
+
+  /* h3:first-letter {
+    color: black;
+    background-color: yellow;
+  }
+  
+  h3:first-line {
+    color: red;
+    background-color: lightgrey;
+  } */
+
+  h1:hover {
+    color: red;
+    background-color: yellow;
+  }
+  
+  input:focus {
+    background-color: lightgreen;
+  }
+  
+  input:active {
+    background-color: yellow;
+  }
+  
