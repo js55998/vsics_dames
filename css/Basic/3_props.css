@@ -1,0 +1,50 @@
+body{
+    /* background: 
+    linear-gradient(60deg,rgb(221, 106, 71),yellow)
+    radial-gradient(blue,yellow) */
+    /* background:url("./images.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+/* #p1{
+    color: yellow;
+    background-color: hsla(233, 97%, 49%, 0.198);
+}
+
+#p2{
+    color: #00FF00;
+    background-color: #FF0000;
+} */
+
+h3{
+    font-family: 'Gloria Hallelujah'; 
+    font-style: italic; 
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-shadow: -4px 4px 4px red;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    text-align: center;
+}
+
+.area{
+    background-color: tomato;
+    color: white;
+    width: 50%;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px outset yellow;
+    border-radius: 10px;
+    box-shadow: -3px 3px 3px blue;
+    margin-top:25px;
+    margin-bottom:20px;
+    margin-left:10px;
+    margin-right:29px;
+}
+
+
+}
