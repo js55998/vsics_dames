@@ -1,0 +1,28 @@
+.boxA {
+    background-color: lightskyblue;
+    padding: 10px;
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.boxB {
+    background-color: lightpink;
+    padding: 10px;
+    color: red;
+}
+
+#box2b {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+#box3b {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#box4b {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}

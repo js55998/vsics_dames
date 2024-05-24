@@ -1,0 +1,5 @@
+.column{
+    column-count: 3;
+    column-gap: 100px;
+    column-rule: 10px double blue;
+}

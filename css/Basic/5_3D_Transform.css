@@ -1,0 +1,20 @@
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: lightcoral;
+}
+#translation3d {
+    transform:
+    perspective(700px)
+    translateX(100px)
+    translateY(100px)
+    translateZ(-2000px)
+}
+#rotation3d {
+    transform:
+    perspective(700px)
+    rotateX(45deg)
+    rotateY(60deg)
+    rotateZ(45deg)
+}
