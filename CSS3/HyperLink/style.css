@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  padding: 10%;
+}
+
+/* 
+    NOTE:
+    -> Link > Visited > Hover, Focus > Active
+    -> When you want to change the color for links you need to follow the above given order to style the links. If you want follow it. It will not apply the css for the links.
+*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover,
+a:focus {
+  color: dodgerblue;
+}
+
+a:active {
+  color: red;
+}

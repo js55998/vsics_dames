@@ -1,0 +1,21 @@
+/* Element */
+body {
+  font-size: 24px;
+}
+/* Multiple element */
+h1,
+h2 {
+  color: red;
+}
+/* Class */
+.green {
+  color: green;
+}
+/* ID */
+#blue {
+  color: blue;
+}
+/* Universal (CSS reset) */
+* {
+  font-family: monospace;
+}

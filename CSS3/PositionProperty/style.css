@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  min-height: 200vh;
+}
+
+.outer-container {
+  border: 3px dotted black;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.inner-container {
+  border: 3px solid black;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  padding: 1rem;
+  color: white;
+}
+
+/* 
+    Absolute
+    -> It's need a relative element and position values.
+    -> If it doesn't have a relative element it will take browser window as a relative.
+    -> It follow the nearest relative element.
+*/
+.absolute {
+  background-color: blue;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+/* 
+    Relative
+    -> It is relative to it's element.
+    -> No need to define relative to parent element.
+*/
+.relative {
+  background-color: red;
+  position: relative;
+  top: 200px;
+  left: 450px;
+}
+
+/* 
+    Fixed
+    -> It's just fixed on the screen with same position.
+    -> Even if you scroll the screen it stay same position.
+    -> It's doesn't require relative, it use it own position values.
+*/
+.fixed {
+  background-color: green;
+  position: fixed;
+  top: 100px;
+}
+
+/* 
+    Sticky
+    -> It stick to it's position values.
+    -> When you scroll the sticky element it will go way when it parent element end.
+*/
+.sticky {
+  background-color: black;
+  position: sticky;
+  top: 0;
+}

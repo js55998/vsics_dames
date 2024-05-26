@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+header,
+footer {
+  color: white;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+  height: 100px;
+}
+
+footer {
+  background-color: black;
+  position: sticky;
+  bottom: 0;
+  font-size: 3rem;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: grey;
+}
+
+.social {
+  background-color: royalblue;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  z-index: 1;
+}

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* "vw" give horizontal scroll bar to avoid that use 100% for width */
+  /* width: 100vw; */
+  width: 100%;
+}
+
+body {
+  /* Body element only takes space in page according to it's content. But sometimes if you need body to cover hole page without not having the enough content inside it and also have freedom when content adds up take space according to that new content use "100vh" */
+  height: 100vh;
+}
+
+/*  
+    NOTE:
+    - Font size shouldn't be fix by developer.
+    - It should be maintain by browsers.
+    - By default 16px size maintain by browsers.
+
+    rem 
+    - Root element
+    - When you use rem for font size it will look up to root element font size which is default font size maintain by browser.
+    - After that "rem" will increment size according to root element (Browser's default font size).
+    - "em" will increment size according to "rem" font size.
+    - root element < rem < em
+    - root element (Browser's default settings)
+    - rem: font
+    - em: padding
+*/
+
+main {
+  font-size: 2rem;
+}
+
+h1 {
+  border: 2px solid red;
+  width: 50%;
+  font-size: 3rem;
+  padding: 0.5rem;
+}
+
+p {
+  font-size: 1.5em;
+  width: 5ch;
+}

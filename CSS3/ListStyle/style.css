@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  padding: 10%;
+}
+
+ol {
+  padding: 0;
+  list-style-type: decimal-leading-zero;
+}
+
+ul {
+  list-style-type: square;
+  text-align: center;
+  list-style-position: inside;
+  color: blue;
+  line-height: 1.5;
+  /* list-style-image: url(../images/image.png);
+  list-style-image: square url(../images/image.png); */
+}
+
+i {
+  color: red;
+}
+
+ul li {
+  color: green;
+}
+
+ul li:nth-child(odd) {
+  color: orange;
+}
+
+ul ::marker {
+  color: greenyellow;
+  font-size: 1em;
+  content: "😁";
+} 
