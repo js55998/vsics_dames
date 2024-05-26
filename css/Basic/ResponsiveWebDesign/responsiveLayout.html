@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a {
+        background-color: lightcoral;
+        float: left;
+        width: 20%;
+      }
+      .b {
+        background-color: lightsalmon;
+        float: left;
+        width: 20%;
+      }
+      .c {
+        background-color: yellow;
+        float: left;
+        width: 20%;
+      }
+      .d {
+        background-color: lightgreen;
+        float: left;
+        width: 20%;
+      }
+      .e {
+        background-color: lightskyblue;
+        float: left;
+        width: 20%;
+      }
+
+      @media screen and (max-width:1200px){
+        .a,.b,.c{
+            width:33.33%
+        }
+        .d,.e{
+            width: 50%;
+        }
+      }
+
+      @media screen and (max-width:600px){
+        .a,.b,.c,.d,.e{
+            width:100%
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Layout</h1>
+
+    <div class="a">
+      <p><b>A</b></p>
+    </div>
+
+    <div class="b">
+      <p><b>B</b></p>
+    </div>
+
+    <div class="c">
+      <p><b>C</b></p>
+    </div>
+
+    <div class="d">
+      <p><b>D</b></p>
+    </div>
+
+    <div class="e">
+      <p><b>E</b></p>
+    </div>
+  </body>
+</html>

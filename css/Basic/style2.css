@@ -1,0 +1,90 @@
+.fl-con1{
+    border: 1px solid blue;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items:space-around;
+}
+
+.fl-con1{
+    justify-items:space-around;
+}
+
+.fl-con1-child-div{
+    height: 200px;
+    width: 120px;
+    background-color: red;
+}
+
+
+.fl-con2{
+    border: 1px solid rgb(23, 235, 4);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items:space-around;
+}
+
+.fl-con2-child-div1{
+    height: 100%;
+    width: 50px;
+    background-color: skyblue;
+}
+.fl-con2-child-div2{
+    height: 50%;
+    width: 250px;
+    background-color: green;
+}
+.fl-con2-child-div3{
+    height: 70%;
+    width: 150px;
+    background-color: yellow;
+}
+.fl-con2-child-div4{
+    height: 90%;
+    width: 20px;
+    background-color: purple;
+}
+.fl-con2-child-div5{
+    height: 60%;
+    width: 200px;
+    background-color: orange;
+}
+
+.fl-con3{
+    border: 1px solid orangered;
+
+}
+
+.fl-con3-child-all{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border: 1px solid blue;
+    padding: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.fl-con3-child-div1{
+    background-color: red;
+    width: 33%;
+}
+.fl-con3-child-div2{
+    background-color: orange;
+    width: 33%;
+}
+.fl-con3-child-div3{
+    background-color: blue;
+    width: 30%;
+}
+.fl-con3-child-div4{
+    background-color: green;
+    width: 49%;
+}
+.fl-con3-child-div5{
+    background-color: purple;
+    width: 49%;
+}
