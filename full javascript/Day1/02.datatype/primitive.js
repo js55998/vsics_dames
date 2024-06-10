@@ -1,13 +1,13 @@
 //! Cant Modify the type of the Variable
 let word = 'JavaScript'
 word[0] = 'Y'
-console.log('word:', word)
+console.log('word:', word)//JavaScript
 
 
 
 //! Comparison Between Value
 let numOne = 3
-let numTwo = 3
+let numTwo = '3'
 
 console.log(numOne == numTwo) // true
 

@@ -9,14 +9,11 @@ let age=100
 // Concatenating using addition operator
 let fullName = firstName + space + lastName 
 console.log(fullName)
+
+
 // concatenation, merging two string together.
 let personInfoOne = fullName + '. I am ' + age + '. I live in ' + country // ES5
 console.log(personInfoOne)
-
-
-
-
-
 
 // Concatenation: Template Literals(Template Strings)
 let personInfoTwo = `I am ${fullName}. I am ${age}. I live in ${country}.` 
