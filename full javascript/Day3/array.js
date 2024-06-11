@@ -145,7 +145,7 @@ console.log(number)
 number.splice(0,2)
 console.log(number)
 number = [1, 2, 3, 4, 5, 6]
-number.splice(3,2 , 7, 8,10)
+number.splice(3,2 , 7, 8)
 console.log(number) 
 
 
@@ -180,7 +180,26 @@ for(let i = 0; i <= 5; i++){
   console.log(`${i} * ${i} = ${i * i}`)
 }
 
-const numb = [1, 2, 3, 4, 5]
-for (const nmb of numb) {
-  console.log(nmb)
+const elements = [1, 2, 3, 4, 5]
+for (const element of elements) {
+  console.log(element)
+}
+
+// 1 4 9 16 25
+for (const element of elements) {
+  console.log(element*element)
+}
+//15
+let sum=0;
+for (const element of elements) {
+ sum=sum+element 
+}
+console.log(sum)
+
+
+
+
+
+for (const tech of webTechs) {
+  console.log(tech.toUpperCase())
 }
