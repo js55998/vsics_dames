@@ -1,4 +1,4 @@
-const now = new Date()
+const now = new Date() // now is a Date Object
 console.log(now)
 console.log(now.getDate())
 console.log(now.getDay())
