@@ -6,37 +6,43 @@ const array1 = ["a", "b", "c"];
 
 array1.forEach((element) => console.log(element));
 
+
+
+
 const ratings = [5, 4, 5];
 let sum = 0;
-
 const sumFunction = async (a, b) => a + b;
-
 ratings.forEach(async (rating) => {
   sum = await sumFunction(sum, rating);
 });
-
 console.log(sum);
+
+
+
+
 
 //Converting a for loop to forEach
 const items = ["item1", "item2", "item3"];
 const copyItems1 = [];
 const copyItems2 = [];
-
 // before
 for (let i = 0; i < items.length; i++) {
   copyItems1.push(items[i]);
 }
-
 // after
 items.forEach((item) => {
   copyItems2.push(item);
 });
 
-//Printing the contents of an array
 
+
+
+//Printing the contents of an array
 const logArrayElements = (element, index /*, array */) => {
   console.log(`a[${index}] = ${element}`);
 };
+
+
 
 // Notice that index 2 is skipped, since there is no item at
 // that position in the array.
