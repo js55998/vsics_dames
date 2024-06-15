@@ -6,15 +6,28 @@ const anonymousFun =function(){
 }
 anonymousFun()
 
+
+
+
+
+
+
+
 // Function expression
 const square = function(n) {
     return n * n
 }
-console.log(square(2)) 
+console.log(square(2))
 
 //Self Invoking Functions
-let squaredNum = (function(n){return n*n})(10)
+//first () is Declaration
+//Second () is Calling
+let squaredNum = (function(n){return n*n})()
+function abc(squaredNum){
+  return squaredNum+1;
+}
 console.log(squaredNum)
+console.log(abc())
 
 //Arrow Function
 //Arrow function is an alternative to write a function, however function declaration and arrow function have some minor differences.
