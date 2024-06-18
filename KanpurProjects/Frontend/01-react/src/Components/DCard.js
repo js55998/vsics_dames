@@ -1,21 +1,21 @@
 import React from "react";
 import "./Card.css";
 
-const Card = () => {
+const DCard = (props) => {
   return (
     <>
       <h2>Card</h2>
       <div className="card">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" className="img" />
+        <img src={props.img} alt="Avatar" className="img" />
         <div className="container">
           <h4>
-            <b>Debasish Sahoo</b>
+            <b>{props.name}</b>
           </h4>
-          <p>Devops Engg</p>
+          <p>{props.job}</p>
         </div>
       </div>
     </>
   );
 };
 
-export default Card;
+export default DCard;
