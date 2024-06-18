@@ -21,21 +21,21 @@
 
 //!false Every time
 
-// const doSomething = (x) => {
-//   console.log("Function is Start....");
+const doSomething = (x) => {
+  console.log("Function is Start....");
 
-//   setTimeout(() => {
-//     const skills = ["HTML", "CSS", "JS"];
-//     x(false, skills);//!set error false every time
-//   }, 3000);
+  setTimeout(() => {
+    const skills = ["HTML", "CSS", "JS"];
+    x(false, skills);//!set error false every time
+  }, 3000);
 
-//   console.log("Function is End....");
-// };
-// const callback = (err, result) => {
-//   if (err) {return console.log(err);}
-//   return console.log(result);
-// };
-// doSomething(callback)
+  console.log("Function is End....");
+};
+const callback = (err, result) => {
+  if (err) {return console.log(err);}
+  return console.log(result);
+};
+doSomething(callback)
 
 
 
