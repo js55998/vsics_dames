@@ -1,15 +1,11 @@
-import React from "react";
-import './DCard.css'
+import React from 'react'
+
 const DCard = (props) => {
   return (
     <>
       <h2>Card</h2>
       <div className="card">
-        <img
-          src={props.img}
-          alt="Avatar"
-          className="img"
-        />
+        <img src={props.img} alt="Avatar" className="img" />
         <div className="container">
           <h4>
             <b>{props.name}</b>
@@ -18,7 +14,7 @@ const DCard = (props) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default DCard;
+export default DCard

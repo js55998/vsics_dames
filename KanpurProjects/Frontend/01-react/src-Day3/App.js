@@ -1,9 +1,9 @@
-import Cards from "./Components/SCards/Cards"
+import MathComponent from './Components/MathComponent'
 import "./App.css";
 function App() {
   return (
     <>
-    <Cards/>
+    <MathComponent/>
     </>
   );
 }
