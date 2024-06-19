@@ -1,0 +1,15 @@
+.mainBox{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    gap:1rem
+    }
+    
+    .box{
+    min-width: 200px;
+    flex: 1;
+    border: 2px solid blue;
+    padding: 0.5rem;
+    }
