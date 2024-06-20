@@ -10,11 +10,21 @@ const Page = () => {
   const date = now.getDate();
   const hours = now.getHours();
   const minutes = now.getMinutes();
+
+  
+  const main_tech="React.js";
   const techs = ["HTML", "CSS", "JavaScript"];
+  const techsFormatted=techs.map((tech, index) => (
+    <li key={index}>{tech}</li>
+  ))
+
+
+
 
   return (
     <>
       <div className="app">
+        {/* Direct Data Pass */}
         <Header
           welcome="Welcome to React Development"
           title="Getting Started React"
@@ -22,11 +32,10 @@ const Page = () => {
           author={{ firstName: "Debasish", lastName: "Sahoo" }}
           current_date={`${date}/${month}/${year} ${hours}:${minutes}`}
         />
+        {/* indirect Data Pass */}
         <Main
-          main_tech="React.js"
-          techsFormatted={techs.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
+          main_tech={main_tech}
+          techsFormatted={techsFormatted}
         />
         <Footer copyRight="Copyright 2024" />
       </div>
