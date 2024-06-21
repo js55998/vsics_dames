@@ -7,7 +7,12 @@ const Header = () => {
   const hours = now.getHours(); 
   const minutes = now.getMinutes();
   return (
-    <header>
+    <header style={{
+      backgroundColor: '#61DBFB',
+      fontFamily: 'Helvetica Neue',
+      padding: 25,
+      lineHeight: 1.5,
+    }}>
       <h1>Welcome to React Development</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>

@@ -1,9 +1,14 @@
-import Page from './Components/GeneralStylePages/Page'
+
+import Page from './Components/DataPages/Page.jsx'
+import MultipleProps from './Components/DetailsProps/MultipleProps'
+
 import "./App.css";
 function App() {
   return (
     <>
-    <Page/>
+   <Page/>
+
+   <MultipleProps name="Debasish" title="Sahoo"/>
     </>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-
 const Header = (props) => {
   return (
     <header>
@@ -15,5 +14,4 @@ const Header = (props) => {
     </header>
   );
 };
-
 export default Header;
