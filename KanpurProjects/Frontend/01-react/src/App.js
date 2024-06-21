@@ -1,14 +1,12 @@
-
-import Page from './Components/DataPages/Page.jsx'
-import MultipleProps from './Components/DetailsProps/MultipleProps'
-
+import MathComponent from "./Components/MathComponent";
+import HexComponent from "./Components/HexComponent"
 import "./App.css";
 function App() {
   return (
     <>
-   <Page/>
-
-   <MultipleProps name="Debasish" title="Sahoo"/>
+      <MathComponent />
+      <br/>
+      <HexComponent/>
     </>
   );
 }
