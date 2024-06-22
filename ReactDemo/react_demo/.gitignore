@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src-Prompt
+/src-Object
+/src-Map(Projects)
+/src-Function
+/src-DestructuringApplication
+/src-Destructuring
+/src
