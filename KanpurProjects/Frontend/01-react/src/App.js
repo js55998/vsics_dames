@@ -9,13 +9,15 @@ import PercentageStat from "./Components/ValidProps";
 import "./App.css";
 
 function App() {
-  const tech = { a: "REACT", b: "ANGULAR" };
+  const tech = { a: "REACT", b: "ANGULAR", c:"VueJS" };
   return (
     <>
-      <MultipleProp x="Debasish" y="Sahoo" />
+      <MultipleProp name="Debasish" y="Sahoo" />
+
       <Parent>
         <span>I'm a child!</span>
       </Parent>
+
       <Parent>
         <div>
           <h1>When ever we need to pass child</h1>

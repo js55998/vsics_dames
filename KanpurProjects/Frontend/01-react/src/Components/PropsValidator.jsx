@@ -71,7 +71,7 @@ ValidProps.propTypes = {
     propSymble: PropTypes.symbol
 }
 ValidProps.defaultProps = {
-    propAny: 45,
+    propAny: '45a',
     propArray: [1, 2, 3, 4, 5],
     propBool: true,
     propFunc: function (x) { return x + 5 },

@@ -1,11 +1,9 @@
 import React from 'react'
-
-const MultipleProp = ({ x, y }) => {
+const MultipleProp = ({ name, title }) => {
     return (
         <div>
-            <h1>Hello, {x},{y}</h1> 
+            <h1>Hello, {name},{title}</h1> 
         </div>
     )
 }
-
 export default MultipleProp
