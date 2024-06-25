@@ -22,3 +22,36 @@ DELETE 127.0.0.1:6000/api/325325321543214
 "author":"",
 "summary":""
 }
+
+
+SERVER => 
+DB CONNECTION => 
+SCHEMA & MODEL => 
+SERVICES =>
+CONTROLLER(DATA PROCESSING) =>
+ROUTER =>
+SERVER 
+
+
+
+
+{
+	"_id" : ObjectId("667a39b32093e277c5f68e39"),
+	"title" : "book1",
+	"author" : "debasish",
+	"summary" : "abcxyz",
+	"createdAt" : ISODate("2024-06-25T08:59:55.064+05:30"),
+	"updatedAt" : ISODate("2024-06-25T08:59:55.064+05:30"),
+	"__v" : 0
+}
+
+// collection: books
+{
+	"_id" : ObjectId("667a56ff10ee324a31ee070a"),
+	"title" : "DSA with C++",
+	"author" : "debasish Sahoo",
+	"summary" : "good book",
+	"createdAt" : ISODate("2024-06-25T11:04:55.411+05:30"),
+	"updatedAt" : ISODate("2024-06-25T11:04:55.411+05:30"),
+	"__v" : 0
+}

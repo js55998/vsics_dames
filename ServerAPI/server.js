@@ -3,8 +3,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 
-
-
 const connect=require('./database/dbConnection');
 const bookRouter = require('./routes/book.router');
 
