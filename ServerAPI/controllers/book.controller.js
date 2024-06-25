@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const bookService = require('../services/book.service');
+
 const addBook = async (req, res) => {
   const { title, author, summary } = req.body;
   try {
     await bookService.create({ title, author, summary });
-
     return res.status(200).send({ data: 'success', error: null });
   } catch (error) {
     if (error.keyValue.title === title) {
@@ -13,12 +13,6 @@ const addBook = async (req, res) => {
     return res.status(500).send({ data: 'failure', error: 'Internal server error' });
   }
 };
-
-
-
-
-
-
 
 const getAllBook = async (req, res) => {
   try {
@@ -31,11 +25,8 @@ const getAllBook = async (req, res) => {
     return res.status(500).send({ data: null, error: 'internal server error' });
   }
 };
-
-
 const getBookById = async (req, res) => {
   const bookId = req.params.id;
-
   if (mongoose.isValidObjectId(bookId)) {
     try {
       const book = await bookService.getById(bookId);

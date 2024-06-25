@@ -1,8 +1,24 @@
 
 npm init -y
-
-
 npm i express mongoose dotenv cors body-parser
-
-
 npm i --save-dev nodemon
+npm i --save-dev swagger-autogen
+npm i --save-dev swagger-ui-express
+
+
+GET 127.0.0.1:6000/api/all-book  
+
+GET 127.0.0.1:6000/api/325325321543214 demo id
+
+POST 127.0.0.1:6000/api/add-book   NEED PAYLOAD
+
+PUT 127.0.0.1:6000/api/update-book/4124214214214  NEED PAYLOAD
+
+DELETE 127.0.0.1:6000/api/325325321543214
+
+
+{
+"title":"",
+"author":"",
+"summary":""
+}

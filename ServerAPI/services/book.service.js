@@ -4,10 +4,13 @@ const create = async (bookPayload) => {
   const createdBook = await BookModel.create(bookPayload);
   return createdBook;
 };
+
+
 const getAll = async () => {
   const books = await BookModel.find().select('_id title author summary');
   return books;
 };
+
 const getById = async (bookId) => {
   const book = await BookModel.findById(bookId).select('_id title author summary');
   return book;

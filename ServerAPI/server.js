@@ -3,6 +3,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 
+const swaggerUi = require('swagger-ui-express')
+const swaggerFile = require('./swagger_output.json')
+
 const connect=require('./database/dbConnection');
 const bookRouter = require('./routes/book.router');
 
@@ -18,7 +21,8 @@ app.get('/', (req, res) => {
     res.send('Welcome to Book Universe');
   });
 
-app.use('/api/books', bookRouter);
+app.use('/api', bookRouter);
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 connect();
 
