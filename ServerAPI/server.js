@@ -23,6 +23,6 @@ app.use('/api', bookRouter);
 
 connect();
 
-app.listen(process.env.PORT || 6000, () => {
-  console.log(`running on port ${process.env.PORT}`);
+app.listen(6000, () => {
+  console.log(`running on port 6000`);
 });

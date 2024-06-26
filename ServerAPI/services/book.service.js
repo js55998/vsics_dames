@@ -5,7 +5,6 @@ const create = async (bookPayload) => {
   return createdBook;
 };
 
-
 const getAll = async () => {
   const books = await BookModel.find().select('_id title author summary');
   return books;
@@ -14,8 +13,7 @@ const getAll = async () => {
 const getById = async (bookId) => {
   const book = await BookModel.findById(bookId).select('_id title author summary');
   return book;
-};
-
+};                                                                
 
 const updateById = async (bookId, updatePayload) => {
   const updatedBook = await BookModel.findByIdAndUpdate(bookId, updatePayload, {
@@ -23,6 +21,7 @@ const updateById = async (bookId, updatePayload) => {
   });
   return updatedBook;
 };
+
 const deleteById = async (bookId) => {
   const deleteBook = await BookModel.findByIdAndDelete(bookId);
   return deleteBook;
