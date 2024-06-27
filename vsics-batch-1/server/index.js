@@ -3,13 +3,15 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
 
-const connection=require("./config/db.connection")
+const connection=require("./database/mongo.connection")
+
+const app = express();
+dotenv.config();
 
 const PORT = process.env.PORT || 6000;
 const HOST = "http://localhost:";
 
-const app = express();
-dotenv.config();
+
 
 app.use(express.json());
 
