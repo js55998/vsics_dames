@@ -13,7 +13,7 @@ const getAll = async () => {
 const getById = async (bookId) => {
   const book = await BookModel.findById(bookId).select('_id title author summary');
   return book;
-};                                                                
+};
 
 const updateById = async (bookId, updatePayload) => {
   const updatedBook = await BookModel.findByIdAndUpdate(bookId, updatePayload, {
