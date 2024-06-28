@@ -1,7 +1,6 @@
-import mongoose from "mongoose";
-import bcrypt from "bcryptjs";
+const mongoose = require( "mongoose");
+const bcrypt = require( "bcryptjs");
 
-//Table Design
 const adminSchema = mongoose.Schema(
   {
     name: {
@@ -26,14 +25,16 @@ const adminSchema = mongoose.Schema(
       default: false,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
-adminSchema.method.matchPassword=async function(enteredPassword){
+adminSchema.methods.matchPassword= async function(enteredPassword){
     return await bcrypt.compare(enteredPassword, this.password);
 }
 
-
-//Table Creation(NAME,SCHEMA)
+//Table name is Admin.
+//Table Design is adminSchema
 const Admin = mongoose.model("Admin", adminSchema);
-export default Admin;
+module.exports= Admin;

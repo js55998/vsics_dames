@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+const mongoose=require('mongoose');
 const studentSchema = mongoose.Schema(
   {
     registered_by: {
@@ -63,4 +63,4 @@ const studentSchema = mongoose.Schema(
 //any name can be given as a constant in the place of the Student
 const Student = mongoose.model('Student', studentSchema)
 //Student variable is exported as follow is a ES module.
-export default Student
+module.exports= Student

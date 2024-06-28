@@ -4,6 +4,7 @@ const cors = require("cors");
 const path = require("path");
 
 const connect = require("./databases/mongo.connect");
+const studentRouter=require('./routes/student.route')
 const app = express();
 dotenv.config();
 const PORT = process.env.PORT || 6000;
@@ -18,6 +19,8 @@ app.use(cors(corsOptions));
 app.get("/", async (req, res) => {
   res.send("API is running...");
 });
+
+app.use('/api/student',studentRouter);
 
 //following route will only be used in case the error is encountered.
 app.use((req, res, next) => {

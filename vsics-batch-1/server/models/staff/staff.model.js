@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require( "mongoose");
 const staffSchema = mongoose.Schema(
   {
     registered_by: {
@@ -61,4 +61,4 @@ const staffSchema = mongoose.Schema(
   }
 );
 const Staff = mongoose.model("Staff", staffSchema);
-export default Staff;
+module.exports= Staff;

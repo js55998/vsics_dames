@@ -1,4 +1,4 @@
-import Admin from '../models/admin.model'
+const Admin = require( '../models/admin.model')
 
 const loginUser = async ({ email }) => {
   const user = await Admin.findOne({ email });

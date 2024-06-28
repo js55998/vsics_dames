@@ -1,12 +1,14 @@
-import Student from "../models/student/student.model";
-import StudentFees from "../models/student/studentFees.model";
-import StudentAttendance from "../models/student/studentAttendance.model";
+const Student =require("../models/student/student.model");
+const StudentFees=require("../models/student/studentFees.model");
+const StudentAttendance=require("../models/student/studentAttendance.model");
 
-const createStudent = async (studentpayload) => {
+const studentService={};
+
+studentService.createStudent = async (studentpayload) => {
   const newStudent = await Student.create(studentpayload);
   return newStudent;
 };
-const updateStudentById = async (studentid, updatedpayload) => {
+studentService.updateStudentById = async (studentid, updatedpayload) => {
   const updateStudent = await Student.findByIdAndUpdate(
     studentid,
     updatedpayload,
@@ -14,33 +16,39 @@ const updateStudentById = async (studentid, updatedpayload) => {
   );
   return updateStudent;
 };
-const deleteStudentById = async (studentid) => {
+studentService.deleteStudentById = async (studentid) => {
   const deleteStudent = await Student.findByIdAndDelete(studentid);
   return deleteStudent;
 };
-const getAllStudent = async () => {
+studentService.getAllStudent = async () => {
   const students = await Student.find({});
   return students;
 };
-const getStudentById = async (studentid) => {
+studentService.getStudentById = async (studentid) => {
   const student = await Student.findById(studentid);
   return student;
 };
 
-const getAllStudentByClass = async (className) => {
+studentService.getAllStudentByClass = async (className) => {
   const students = await Student.find({ classname: className });
   return students;
 };
 
-const getOneStudentByClass = async (className) => {
+studentService.getOneStudentByClass = async (className) => {
   const student = await Student.findOne({ classname: className })
     .sort({ roll_no: -1 })
     .limit(1);
   return student;
 };
-const getByClassAttendance = () => {};
+studentService.getByClassAttendance = async(requestParameter) => {
+  const student = await StudentAttendance.findOne({
+    attendance_date: requestParameter.attendance_date,
+    classname: requestParameter.classname,
+  })
+  return student;
+};
 
-const searchStudentByNameClassRoll = async (searchQuery) => {
+studentService.searchStudentByNameClassRoll = async (searchQuery) => {
   const student = await Student.find({
     student_name: searchQuery.name,
     classname: searchQuery.className,
@@ -49,7 +57,7 @@ const searchStudentByNameClassRoll = async (searchQuery) => {
   return student;
 };
 
-const createAttendance = async (attendanceData) => {
+studentService.createAttendance = async (attendanceData) => {
   const newAttendance = await StudentAttendance.create({
     class_teacher: attendanceData.teacher,
     attendance_date: Date.now(),
@@ -59,7 +67,7 @@ const createAttendance = async (attendanceData) => {
   return newAttendance;
 };
 
-const updateAttendance = async (re_attendanceData) => {
+studentService.updateAttendance = async (re_attendanceData) => {
   const updatedAttendance = await StudentAttendance.updateOne({
     _id: re_attendanceData._id,
     $set: { students: re_attendanceData.students },
@@ -67,7 +75,7 @@ const updateAttendance = async (re_attendanceData) => {
   return updatedAttendance;
 };
 
-const getOneAttendance = async (searchQuery) => {
+studentService.getOneAttendance = async (searchQuery) => {
   const Attendance = await StudentAttendance.findOne({
     attendance_date: searchQuery.attendanceDate,
     classname: searchQuery.className,
@@ -75,15 +83,16 @@ const getOneAttendance = async (searchQuery) => {
   return Attendance;
 };
 
-const payFees = async (fees_details) => {
+studentService.payFees = async (fees_details) => {
   const feesSubmit = await StudentFees.create(fees_details);
   return feesSubmit;
 };
-const totalFees = async () => {
-  const fees_info = await StudentFees
-    .find()
+studentService.totalFees = async () => {
+  const fees_info = await StudentFees.find()
     .select(
       "monthly_fees hostel_fees laboratory_fees computer_fees exam_fees miscellaneous "
     )
     .select("-_id");
 };
+
+module.exports=studentService;
